@@ -7,6 +7,7 @@ from pathlib import Path
 import json
 import os
 import subprocess
+import shutil
 
 rusDomainsInsideOut='Russia/inside'
 rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
@@ -27,59 +28,78 @@ DigitalOceanSubnets = 'Subnets/IPv4/digitalocean.lst'
 CloudfrontSubnets = 'Subnets/IPv4/cloudfront.lst'
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst'}
 
-def raw(src, out):
-    domains = set()
+def collect_sources(src, exclude_files=ExcludeServices):
     files = []
-
     if isinstance(src, list):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
+                files.extend(f for f in path.glob('*') if f.name not in exclude_files)
+            elif path.is_file() and path.name not in exclude_files:
                 files.append(path)
+    elif isinstance(src, (str, Path)):
+         path = Path(src)
+         if path.is_dir():
+             files.extend(f for f in path.glob('*') if f.name not in exclude_files)
+         elif path.is_file() and path.name not in exclude_files:
+             files.append(path)
+    return files
 
+def collect_associated_subnets(src_files, subnet_dir='Subnets/IPv4'):
+    subnets = []
+    subnet_path = Path(subnet_dir)
+    if not subnet_path.exists():
+        return subnets
+        
+    # Get all available subnet files for case-insensitive matching
+    available_subnets = {f.name.lower(): f for f in subnet_path.glob('*')}
+    
+    for src_file in src_files:
+        # Check for exact match first
+        candidate = subnet_path / src_file.name
+        if candidate.exists():
+             subnets.append(candidate)
+             continue
+             
+        # Check for lowercase match
+        if src_file.name.lower() in available_subnets:
+             subnets.append(available_subnets[src_file.name.lower()])
+             
+    return sorted(list(set(subnets)))
+
+def extract_domains_from_files(files, remove=set(), kvas_mode=False):
+    domains = set()
     for f in files:
         if f.is_file():
             with open(f) as infile:
                     for line in infile:
-                        if tldextract.extract(line).suffix:
-                            if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                                domains.add(tldextract.extract(line.rstrip()).fqdn)
-                            if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                                domains.add("." + tldextract.extract(line.rstrip()).suffix)
+                        line = line.strip()
+                        if not line: continue
+                        
+                        ext = tldextract.extract(line)
+                        if ext.suffix:
+                            if re.search(r'[^а-я\-]', ext.domain):
+                                domains.add(ext.fqdn)
+                            if not ext.domain and ext.suffix:
+                                if kvas_mode:
+                                    domains.add(ext.suffix)
+                                else:
+                                    domains.add("." + ext.suffix)
+    
+    domains = domains - remove
+    return sorted(domains)
 
-    domains = sorted(domains)
+def raw(src, out):
+    files = collect_sources(src)
+    domains = extract_domains_from_files(files)
 
     with open(f'{out}-raw.lst', 'w') as file:
         for name in domains:
             file.write(f'{name}\n')
 
 def dnsmasq(src, out, remove={'google.com'}):
-    domains = set()
-    domains_single = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        if f.is_file():
-            with open(f) as infile:
-                    for line in infile:
-                        if tldextract.extract(line).suffix:
-                            if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                                domains.add(tldextract.extract(line.rstrip()).fqdn)
-                            if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                                domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    files = collect_sources(src)
+    domains = extract_domains_from_files(files, remove)
 
     with open(f'{out}-dnsmasq-nfset.lst', 'w') as file:
         for name in domains:
@@ -90,87 +110,24 @@ def dnsmasq(src, out, remove={'google.com'}):
             file.write(f'ipset=/{name}/vpn_domains\n')
 
 def clashx(src, out, remove={'google.com'}):
-    domains = set()
-    domains_single = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    files = collect_sources(src)
+    domains = extract_domains_from_files(files, remove)
 
     with open(f'{out}-clashx.lst', 'w') as file:
         for name in domains:
             file.write(f'DOMAIN-SUFFIX,{name}\n')
 
 def kvas(src, out, remove={'google.com'}):
-    domains = set()
-    domains_single = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add(tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    files = collect_sources(src)
+    domains = extract_domains_from_files(files, remove, kvas_mode=True)
 
     with open(f'{out}-kvas.lst', 'w') as file:
         for name in domains:
             file.write(f'{name}\n')
 
 def mikrotik_fwd(src, out, remove={'google.com'}):
-    domains = set()
-    domains_single = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    files = collect_sources(src)
+    domains = extract_domains_from_files(files, remove)
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
@@ -192,17 +149,39 @@ def domains_from_file(filepath):
     return domains
 
 def generate_srs_domains(domains, output_name):
+    # Backward compatibility wrapper or specific use case if needed
+    generate_srs_mixed(domains, [], output_name)
+
+def generate_srs_mixed(domains, subnets_files, output_name):
     output_directory = 'JSON'
     compiled_output_directory = 'SRS'
 
     os.makedirs(output_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
+    # Read subnets
+    ip_cidrs = []
+    if subnets_files:
+        for f in subnets_files:
+            try:
+                with open(f, 'r', encoding='utf-8') as infile:
+                    for line in infile:
+                        cidr = line.strip()
+                        if cidr:
+                            ip_cidrs.append(cidr)
+            except Exception as e:
+                 print(f"Error reading subnet file {f}: {e}")
+    
+    # Construct rules
+    rules = []
+    if domains:
+        rules.append({"domain_suffix": domains})
+    if ip_cidrs:
+        rules.append({"ip_cidr": ip_cidrs})
+        
     data = {
         "version": 3,
-        "rules": [
-            {"domain_suffix": domains}
-        ]
+        "rules": rules
     }
 
     json_file_path = os.path.join(output_directory, f"{output_name}.json")
@@ -395,8 +374,6 @@ def prepare_dat_domains(domains, output_name, dirs=[]):
             out_f.write(f"{line}\n")
 
 def prepare_dat_combined(dirs):
-    import shutil
-    
     output_lists_directory = 'geosite_data'
     os.makedirs(output_lists_directory, exist_ok=True)
 
@@ -471,10 +448,15 @@ if __name__ == '__main__':
 
     # Sing-box ruleset main
     russia_inside = domains_from_file('Russia/inside-raw.lst')
+    # Collect subnets for Russia Inside
+    inside_files = collect_sources(inside_lists)
+    russia_inside_subnets = collect_associated_subnets(inside_files)
+    generate_srs_mixed(russia_inside, russia_inside_subnets, 'russia_inside')
+
     russia_outside = domains_from_file('Russia/outside-raw.lst')
-    ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
-    generate_srs_domains(russia_inside, 'russia_inside')
     generate_srs_domains(russia_outside, 'russia_outside')
+    
+    ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
     generate_srs_domains(ukraine_inside, 'ukraine_inside')
 
     # Sing-box categories
