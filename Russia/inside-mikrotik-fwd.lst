@@ -549,6 +549,7 @@
 /ip dns static add name=mullvad.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=multporn.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=muscdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=music.youtube.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=musical.ly type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=musixmatch.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mw2.wiki type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
