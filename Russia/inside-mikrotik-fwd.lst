@@ -364,6 +364,7 @@
 /ip dns static add name=hackernoon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hackmd.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=halooglasi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=hanmew.online type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hashicorp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=haydaygame.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hbomax.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -496,6 +497,7 @@
 /ip dns static add name=locals.md type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lolz.guru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lookerstudio.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=lordicon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lostfilm.download type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lostfilm.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lostfilm.tw type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
