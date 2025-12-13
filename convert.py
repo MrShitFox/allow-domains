@@ -191,18 +191,20 @@ def domains_from_file(filepath):
         print(f"File not found: {filepath}")
     return domains
 
-def generate_srs_domains(domains, output_name):
+def generate_srs_domains(domains, output_name, ip_cidrs=None):
     output_directory = 'JSON'
     compiled_output_directory = 'SRS'
 
     os.makedirs(output_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
+    rule = {"domain_suffix": domains}
+    if ip_cidrs:
+        rule["ip_cidr"] = ip_cidrs
+
     data = {
         "version": 3,
-        "rules": [
-            {"domain_suffix": domains}
-        ]
+        "rules": [rule]
     }
 
     json_file_path = os.path.join(output_directory, f"{output_name}.json")
@@ -473,7 +475,30 @@ if __name__ == '__main__':
     russia_inside = domains_from_file('Russia/inside-raw.lst')
     russia_outside = domains_from_file('Russia/outside-raw.lst')
     ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
-    generate_srs_domains(russia_inside, 'russia_inside')
+
+    russia_inside_cidrs = set()
+    
+    for directory in [rusDomainsInsideCategories, rusDomainsInsideServices]:
+        if not os.path.exists(directory):
+            continue
+            
+        for filename in os.listdir(directory):
+            if filename in ExcludeServices:
+                continue
+            
+            for ip_ver in ['IPv4', 'IPv6']:
+                subnet_path = os.path.join('Subnets', ip_ver, filename)
+                if os.path.exists(subnet_path):
+                    with open(subnet_path, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            cidr = line.strip()
+                            if cidr:
+                                russia_inside_cidrs.add(cidr)
+
+    russia_inside_cidrs = sorted(list(russia_inside_cidrs))
+
+    generate_srs_domains(russia_inside, 'russia_inside', ip_cidrs=russia_inside_cidrs)
+
     generate_srs_domains(russia_outside, 'russia_outside')
     generate_srs_domains(ukraine_inside, 'ukraine_inside')
 
