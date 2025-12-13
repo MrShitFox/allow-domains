@@ -999,6 +999,7 @@ DOMAIN-SUFFIX,vpnlove.me
 DOMAIN-SUFFIX,vpnpay.io
 DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,w.atwiki.jp
+DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,watermarkremover.io
@@ -1009,6 +1010,8 @@ DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
