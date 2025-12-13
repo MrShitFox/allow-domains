@@ -61,6 +61,7 @@ DOMAIN-SUFFIX,api.jetbrains.ai
 DOMAIN-SUFFIX,api.service-kp.com
 DOMAIN-SUFFIX,api.theins.info
 DOMAIN-SUFFIX,api.themoviedb.org
+DOMAIN-SUFFIX,api.whatsapp.com
 DOMAIN-SUFFIX,apkmirror.com
 DOMAIN-SUFFIX,app.zerossl.com
 DOMAIN-SUFFIX,arbat.media
@@ -115,6 +116,7 @@ DOMAIN-SUFFIX,buf.build
 DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,c.whatsapp.net
 DOMAIN-SUFFIX,canva.com
 DOMAIN-SUFFIX,canva.dev
 DOMAIN-SUFFIX,capacitorjs.com
@@ -538,6 +540,7 @@ DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
 DOMAIN-SUFFIX,miracleptr.wordpress.com
 DOMAIN-SUFFIX,mixcloud.com
+DOMAIN-SUFFIX,mmg.whatsapp.net
 DOMAIN-SUFFIX,modrinth.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,monoprice.com
@@ -680,6 +683,7 @@ DOMAIN-SUFFIX,portal.lviv.ua
 DOMAIN-SUFFIX,posle.media
 DOMAIN-SUFFIX,posthog.com
 DOMAIN-SUFFIX,postimees.ee
+DOMAIN-SUFFIX,pps.whatsapp.net
 DOMAIN-SUFFIX,pravda.com
 DOMAIN-SUFFIX,pravda.com.ua
 DOMAIN-SUFFIX,premierleague.com
@@ -998,16 +1002,20 @@ DOMAIN-SUFFIX,vpnlove.me
 DOMAIN-SUFFIX,vpnpay.io
 DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,w.atwiki.jp
+DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,watermarkremover.io
 DOMAIN-SUFFIX,wbgames.com
 DOMAIN-SUFFIX,weather.com
+DOMAIN-SUFFIX,web.whatsapp.com
 DOMAIN-SUFFIX,webmd.com
 DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
