@@ -666,6 +666,7 @@ ipset=/phncdn.com.sds.rncdn7.com/vpn_domains
 ipset=/pimpletv.ru/vpn_domains
 ipset=/pingdom.com/vpn_domains
 ipset=/piratbit.top/vpn_domains
+ipset=/pixiv.net/vpn_domains
 ipset=/pkgs.tailscale.com/vpn_domains
 ipset=/platform.activestate.com/vpn_domains
 ipset=/playboy.com/vpn_domains
