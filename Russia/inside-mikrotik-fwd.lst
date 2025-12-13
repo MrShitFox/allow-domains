@@ -61,6 +61,7 @@
 /ip dns static add name=api.service-kp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.theins.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.themoviedb.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=api.whatsapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=apkmirror.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=app.zerossl.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=arbat.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -115,6 +116,7 @@
 /ip dns static add name=builds.parsec.app type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=buymeacoffee.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=byteoversea.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=c.whatsapp.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=canva.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=canva.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=capacitorjs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -538,6 +540,7 @@
 /ip dns static add name=mignews.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=miracleptr.wordpress.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mixcloud.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=mmg.whatsapp.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=modrinth.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mongodb.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=monoprice.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -680,6 +683,7 @@
 /ip dns static add name=posle.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=posthog.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=postimees.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=pps.whatsapp.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pravda.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pravda.com.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=premierleague.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -997,16 +1001,20 @@
 /ip dns static add name=vpnpay.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vyos.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=w.atwiki.jp type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=wa.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=walmart.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=watchguard.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=watermarkremover.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wbgames.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=weather.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=web.whatsapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=webmd.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=webnames.ca type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=webtoons.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=weebly.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=welt.de type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=whatsapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=whatsapp.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wide-youtube.l.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=widgetapp.stream type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wiki.fextralife.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
