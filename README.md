@@ -118,7 +118,9 @@
 
 4.  **Обновите списки**:
     ```bash
-    podkop list_update
+    podkop stop
+    rm /tmp/sing-box/cache.db
+    podkop start
     ```
 
 Теперь ваш роутер использует актуальные базы.
