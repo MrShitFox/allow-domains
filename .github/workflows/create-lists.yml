@@ -23,6 +23,7 @@ jobs:
     - name: Compile ruleset srs
       run: |
         docker run --rm \
+        -v ${{ github.workspace }}/convert.py:/app/convert.py \
         -v ${{ github.workspace }}/src:/app/src \
         -v ${{ github.workspace }}/Subnets:/app/Subnets \
         -v ${{ github.workspace }}/Russia:/app/Russia \
