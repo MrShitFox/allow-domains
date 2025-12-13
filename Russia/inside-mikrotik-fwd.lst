@@ -124,6 +124,7 @@
 /ip dns static add name=cats.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cbilling.eu type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cbilling.vip type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=cdn.lordicon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cdn.web-platform.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cdnbunny.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cdninstagram.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -984,6 +985,7 @@
 /ip dns static add name=vine.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vipergirls.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=visualcapitalist.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=vless.hanmew.online type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vmware.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vndb.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voanews.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
