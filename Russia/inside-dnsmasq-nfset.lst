@@ -700,6 +700,7 @@ nftset=/prowlarr.com/4#inet#fw4#vpn_domains
 nftset=/pscp.tv/4#inet#fw4#vpn_domains
 nftset=/psiphon.ca/4#inet#fw4#vpn_domains
 nftset=/public.parsec.app/4#inet#fw4#vpn_domains
+nftset=/pximg.net/4#inet#fw4#vpn_domains
 nftset=/qt.io/4#inet#fw4#vpn_domains
 nftset=/quicknode.com/4#inet#fw4#vpn_domains
 nftset=/quora.com/4#inet#fw4#vpn_domains

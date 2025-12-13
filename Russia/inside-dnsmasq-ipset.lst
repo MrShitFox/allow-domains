@@ -700,6 +700,7 @@ ipset=/prowlarr.com/vpn_domains
 ipset=/pscp.tv/vpn_domains
 ipset=/psiphon.ca/vpn_domains
 ipset=/public.parsec.app/vpn_domains
+ipset=/pximg.net/vpn_domains
 ipset=/qt.io/vpn_domains
 ipset=/quicknode.com/vpn_domains
 ipset=/quora.com/vpn_domains
