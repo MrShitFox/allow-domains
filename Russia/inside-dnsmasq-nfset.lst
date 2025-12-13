@@ -594,6 +594,7 @@ nftset=/nih.gov/4#inet#fw4#vpn_domains
 nftset=/nike.com/4#inet#fw4#vpn_domains
 nftset=/nippon.com/4#inet#fw4#vpn_domains
 nftset=/nitropdf.com/4#inet#fw4#vpn_domains
+nftset=/nixos.org/4#inet#fw4#vpn_domains
 nftset=/nnmclub.to/4#inet#fw4#vpn_domains
 nftset=/nnmstatic.win/4#inet#fw4#vpn_domains
 nftset=/nordaccount.com/4#inet#fw4#vpn_domains

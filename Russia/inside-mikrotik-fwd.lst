@@ -594,6 +594,7 @@
 /ip dns static add name=nike.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nippon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nitropdf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=nixos.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nnmclub.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nnmstatic.win type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nordaccount.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

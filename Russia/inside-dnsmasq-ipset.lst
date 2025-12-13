@@ -594,6 +594,7 @@ ipset=/nih.gov/vpn_domains
 ipset=/nike.com/vpn_domains
 ipset=/nippon.com/vpn_domains
 ipset=/nitropdf.com/vpn_domains
+ipset=/nixos.org/vpn_domains
 ipset=/nnmclub.to/vpn_domains
 ipset=/nnmstatic.win/vpn_domains
 ipset=/nordaccount.com/vpn_domains
