@@ -549,6 +549,7 @@ nftset=/mssg.me/4#inet#fw4#vpn_domains
 nftset=/mullvad.net/4#inet#fw4#vpn_domains
 nftset=/multporn.net/4#inet#fw4#vpn_domains
 nftset=/muscdn.com/4#inet#fw4#vpn_domains
+nftset=/music.youtube.com/4#inet#fw4#vpn_domains
 nftset=/musical.ly/4#inet#fw4#vpn_domains
 nftset=/musixmatch.com/4#inet#fw4#vpn_domains
 nftset=/mw2.wiki/4#inet#fw4#vpn_domains

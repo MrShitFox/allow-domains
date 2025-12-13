@@ -549,6 +549,7 @@ ipset=/mssg.me/vpn_domains
 ipset=/mullvad.net/vpn_domains
 ipset=/multporn.net/vpn_domains
 ipset=/muscdn.com/vpn_domains
+ipset=/music.youtube.com/vpn_domains
 ipset=/musical.ly/vpn_domains
 ipset=/musixmatch.com/vpn_domains
 ipset=/mw2.wiki/vpn_domains
