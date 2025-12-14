@@ -859,6 +859,7 @@
 /ip dns static add name=squadbustersgame.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=squareup.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=squietpc.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=st-hatena.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=startmail.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=startpage.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=static.lostfilm.top type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
