@@ -492,6 +492,7 @@
 /ip dns static add name=liga.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lightning.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=line-scdn.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=line-website.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=linear.app type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=linkedin.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=linktr.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

@@ -492,6 +492,7 @@ nftset=/lifehacker.com/4#inet#fw4#vpn_domains
 nftset=/liga.net/4#inet#fw4#vpn_domains
 nftset=/lightning.ai/4#inet#fw4#vpn_domains
 nftset=/line-scdn.net/4#inet#fw4#vpn_domains
+nftset=/line-website.com/4#inet#fw4#vpn_domains
 nftset=/linear.app/4#inet#fw4#vpn_domains
 nftset=/linkedin.com/4#inet#fw4#vpn_domains
 nftset=/linktr.ee/4#inet#fw4#vpn_domains

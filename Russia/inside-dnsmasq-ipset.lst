@@ -492,6 +492,7 @@ ipset=/lifehacker.com/vpn_domains
 ipset=/liga.net/vpn_domains
 ipset=/lightning.ai/vpn_domains
 ipset=/line-scdn.net/vpn_domains
+ipset=/line-website.com/vpn_domains
 ipset=/linear.app/vpn_domains
 ipset=/linkedin.com/vpn_domains
 ipset=/linktr.ee/vpn_domains
