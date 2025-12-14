@@ -163,6 +163,7 @@
 /ip dns static add name=coldfilm.ink type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coldfilm.xyz type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=colta.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=comic-days.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=community.sophos.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=connect.ngrok-agent.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=contabo.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

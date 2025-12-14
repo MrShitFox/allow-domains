@@ -163,6 +163,7 @@ nftset=/coldfilm.city/4#inet#fw4#vpn_domains
 nftset=/coldfilm.ink/4#inet#fw4#vpn_domains
 nftset=/coldfilm.xyz/4#inet#fw4#vpn_domains
 nftset=/colta.ru/4#inet#fw4#vpn_domains
+nftset=/comic-days.com/4#inet#fw4#vpn_domains
 nftset=/community.sophos.com/4#inet#fw4#vpn_domains
 nftset=/connect.ngrok-agent.com/4#inet#fw4#vpn_domains
 nftset=/contabo.com/4#inet#fw4#vpn_domains

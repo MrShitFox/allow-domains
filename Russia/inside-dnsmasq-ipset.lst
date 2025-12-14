@@ -163,6 +163,7 @@ ipset=/coldfilm.city/vpn_domains
 ipset=/coldfilm.ink/vpn_domains
 ipset=/coldfilm.xyz/vpn_domains
 ipset=/colta.ru/vpn_domains
+ipset=/comic-days.com/vpn_domains
 ipset=/community.sophos.com/vpn_domains
 ipset=/connect.ngrok-agent.com/vpn_domains
 ipset=/contabo.com/vpn_domains
