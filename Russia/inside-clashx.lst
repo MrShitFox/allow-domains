@@ -387,6 +387,8 @@ DOMAIN-SUFFIX,healthline.com
 DOMAIN-SUFFIX,hentai-foundry.com
 DOMAIN-SUFFIX,herokucdn.com
 DOMAIN-SUFFIX,hetzner.com
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,hitomi.la
 DOMAIN-SUFFIX,hollisterco.com
 DOMAIN-SUFFIX,holod.media
@@ -400,6 +402,7 @@ DOMAIN-SUFFIX,hqporner.com
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hs.fi
 DOMAIN-SUFFIX,htmhell.dev
+DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hume.ai
 DOMAIN-SUFFIX,hybrid-analysis.com
 DOMAIN-SUFFIX,i.sakh.com
@@ -440,6 +443,7 @@ DOMAIN-SUFFIX,itch.io
 DOMAIN-SUFFIX,itninja.com
 DOMAIN-SUFFIX,itsmycity.ru
 DOMAIN-SUFFIX,jamf.com
+DOMAIN-SUFFIX,jellyfin.org
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,jnn-pa.googleapis.com
@@ -558,6 +562,7 @@ DOMAIN-SUFFIX,mullvad.net
 DOMAIN-SUFFIX,multporn.net
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,musicbrainz.org
 DOMAIN-SUFFIX,musixmatch.com
 DOMAIN-SUFFIX,mw2.wiki
 DOMAIN-SUFFIX,myanimelist.net
@@ -642,6 +647,8 @@ DOMAIN-SUFFIX,openmedia.io
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,opensanctions.org
 DOMAIN-SUFFIX,opensea.io
+DOMAIN-SUFFIX,opensubtitles.com
+DOMAIN-SUFFIX,opensubtitles.org
 DOMAIN-SUFFIX,opentrackr.org
 DOMAIN-SUFFIX,opposition-news.com
 DOMAIN-SUFFIX,oracle.com
@@ -709,6 +716,7 @@ DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
 DOMAIN-SUFFIX,pximg.net
 DOMAIN-SUFFIX,qt.io
+DOMAIN-SUFFIX,qualcomm.com
 DOMAIN-SUFFIX,quicknode.com
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quora.com.cdn.cloudflare.net
@@ -911,6 +919,7 @@ DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,thepiratebay.org
 DOMAIN-SUFFIX,theporndude.com
 DOMAIN-SUFFIX,thetruestory.news
+DOMAIN-SUFFIX,thetvdb.com
 DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,threema.ch
 DOMAIN-SUFFIX,ti.com
@@ -1020,6 +1029,7 @@ DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
+DOMAIN-SUFFIX,whatsapp.biz
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,wide-youtube.l.google.com
