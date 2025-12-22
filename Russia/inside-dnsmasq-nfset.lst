@@ -56,6 +56,7 @@ nftset=/anistars.ru/4#inet#fw4#vpn_domains
 nftset=/annas-archive.org/4#inet#fw4#vpn_domains
 nftset=/ansys.com/4#inet#fw4#vpn_domains
 nftset=/anthropic.com/4#inet#fw4#vpn_domains
+nftset=/anydesk.com/4#inet#fw4#vpn_domains
 nftset=/aol.com/4#inet#fw4#vpn_domains
 nftset=/api.jetbrains.ai/4#inet#fw4#vpn_domains
 nftset=/api.service-kp.com/4#inet#fw4#vpn_domains

@@ -56,6 +56,7 @@ ipset=/anistars.ru/vpn_domains
 ipset=/annas-archive.org/vpn_domains
 ipset=/ansys.com/vpn_domains
 ipset=/anthropic.com/vpn_domains
+ipset=/anydesk.com/vpn_domains
 ipset=/aol.com/vpn_domains
 ipset=/api.jetbrains.ai/vpn_domains
 ipset=/api.service-kp.com/vpn_domains
