@@ -183,6 +183,7 @@
 /ip dns static add name=cvedetails.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cyberghostvpn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cyxymu.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=d1unuk07s6td74.cloudfront.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=daemon-tools.cc type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dailylviv.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=danbooru.donmai.us type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -460,6 +461,7 @@
 /ip dns static add name=kasparov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kavkaz-uzel.eu type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kavkazr.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=kemono.cr type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kemono.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=keysight.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kino.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -726,6 +728,8 @@
 /ip dns static add name=radiosakharov.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=radiosvoboda.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rbc.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rbx.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rbxcdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=reactflow.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=realbooru.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=realist.online type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -761,6 +765,12 @@
 /ip dns static add name=riperam.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=riseup.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=roar-review.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=roblox-api.arkoselabs.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=roblox-load-generator-configuration.s3.us-east-2.amazonaws.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=roblox-poc.global.ssl.fastly.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=roblox.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=robloxcorp.s.llnwi.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=robloxlabs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=root-nation.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=roskomsvoboda.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rublacklist.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

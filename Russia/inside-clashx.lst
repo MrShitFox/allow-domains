@@ -183,6 +183,7 @@ DOMAIN-SUFFIX,cursorinfo.co.il
 DOMAIN-SUFFIX,cvedetails.com
 DOMAIN-SUFFIX,cyberghostvpn.com
 DOMAIN-SUFFIX,cyxymu.info
+DOMAIN-SUFFIX,d1unuk07s6td74.cloudfront.net
 DOMAIN-SUFFIX,daemon-tools.cc
 DOMAIN-SUFFIX,dailylviv.com
 DOMAIN-SUFFIX,danbooru.donmai.us
@@ -460,6 +461,7 @@ DOMAIN-SUFFIX,kara.su
 DOMAIN-SUFFIX,kasparov.ru
 DOMAIN-SUFFIX,kavkaz-uzel.eu
 DOMAIN-SUFFIX,kavkazr.com
+DOMAIN-SUFFIX,kemono.cr
 DOMAIN-SUFFIX,kemono.su
 DOMAIN-SUFFIX,keysight.com
 DOMAIN-SUFFIX,kino.pub
@@ -726,6 +728,8 @@ DOMAIN-SUFFIX,r4.err.ee
 DOMAIN-SUFFIX,radiosakharov.org
 DOMAIN-SUFFIX,radiosvoboda.org
 DOMAIN-SUFFIX,rbc.ua
+DOMAIN-SUFFIX,rbx.com
+DOMAIN-SUFFIX,rbxcdn.com
 DOMAIN-SUFFIX,reactflow.dev
 DOMAIN-SUFFIX,realbooru.com
 DOMAIN-SUFFIX,realist.online
@@ -761,6 +765,12 @@ DOMAIN-SUFFIX,rima.media
 DOMAIN-SUFFIX,riperam.org
 DOMAIN-SUFFIX,riseup.net
 DOMAIN-SUFFIX,roar-review.com
+DOMAIN-SUFFIX,roblox-api.arkoselabs.co
+DOMAIN-SUFFIX,roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+DOMAIN-SUFFIX,roblox-poc.global.ssl.fastly.net
+DOMAIN-SUFFIX,roblox.com
+DOMAIN-SUFFIX,robloxcorp.s.llnwi.net
+DOMAIN-SUFFIX,robloxlabs.com
 DOMAIN-SUFFIX,root-nation.com
 DOMAIN-SUFFIX,roskomsvoboda.org
 DOMAIN-SUFFIX,rublacklist.net
