@@ -314,6 +314,7 @@
 /ip dns static add name=eadaily.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=easynod.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=easynod.servebeer.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=eax.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=econri.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=edem.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=edemtv.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -1044,6 +1045,7 @@
 /ip dns static add name=remontka.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=remplanner.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ren.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=repack.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=reporter-crimea.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=republic-tv.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rezka.ag type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
