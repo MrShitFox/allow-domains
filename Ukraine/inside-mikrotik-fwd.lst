@@ -249,6 +249,7 @@
 /ip dns static add name=des-life.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=developer.qiwi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=deviantart.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=diakov.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digitalrussia.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dimonvideo.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=direct.yandex.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -801,6 +802,7 @@
 /ip dns static add name=myarena.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=myarena.site type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mybook.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=myfanfic.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=myshows.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mysku.club type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mysku.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
